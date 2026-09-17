@@ -130,6 +130,7 @@ export default function SignUpForm({ onChangeForm }) {
         studentNumber: form.studentNumber.trim(),
         campus: form.campus,
         email: form.email.trim(),
+        password: form.password,
         interests: form.interests,
         bio: form.bio.trim(),
       },

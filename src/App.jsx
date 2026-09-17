@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer.jsx';
 import Home from './views/Home.jsx';
 import About from './views/About.jsx';
 import SignUp from './views/SignUp.jsx';
+import Login from './views/Login.jsx';
 import Profile from './views/Profile.jsx';
 import Feed from './views/Feed.jsx';
 
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/feed" element={<Feed />} />
         </Routes>

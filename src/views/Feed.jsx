@@ -8,7 +8,7 @@ import './Feed.css';
 // for a registered user) and the list of Post components from global state.
 export default function Feed() {
   const { state } = useApp();
-  const { user, posts } = state;
+  const { user, account, posts } = state;
 
   return (
     <div className="page-container feed-page">
@@ -18,10 +18,21 @@ export default function Feed() {
         <CreatePost />
       ) : (
         <div className="card feed-signin-prompt">
-          <p>Register to share your own posts with the community.</p>
-          <Link to="/signup" className="btn-primary">
-            Create your profile
-          </Link>
+          {account ? (
+            <>
+              <p>Sign in to share your own posts with the community.</p>
+              <Link to="/login" className="btn-primary">
+                Sign in
+              </Link>
+            </>
+          ) : (
+            <>
+              <p>Register to share your own posts with the community.</p>
+              <Link to="/signup" className="btn-primary">
+                Create your profile
+              </Link>
+            </>
+          )}
         </div>
       )}
 

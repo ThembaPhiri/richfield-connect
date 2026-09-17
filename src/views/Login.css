@@ -1,0 +1,23 @@
+.login-page {
+  max-width: 440px;
+}
+
+.login-card {
+  padding: var(--space-4);
+}
+
+.login-subtitle {
+  margin-bottom: var(--space-3);
+}
+
+.login-submit {
+  width: 100%;
+  border: none;
+  margin-top: var(--space-1);
+}
+
+.login-footer {
+  text-align: center;
+  margin: var(--space-3) 0 0 0;
+  font-size: 14px;
+}

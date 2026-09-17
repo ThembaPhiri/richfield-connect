@@ -17,17 +17,29 @@ function getInitials(fullName) {
 // hardcoded here.
 export default function Profile() {
   const { state } = useApp();
-  const { user, posts } = state;
+  const { user, account, posts } = state;
 
   if (!user) {
     return (
       <div className="page-container">
         <div className="empty-state card">
-          <h3>Your academic profile starts here.</h3>
-          <p>Create your Richfield Connect profile to join the community.</p>
-          <Link to="/signup" className="btn-primary">
-            Create your profile
-          </Link>
+          {account ? (
+            <>
+              <h3>You're signed out.</h3>
+              <p>Sign in to see your Richfield Connect profile.</p>
+              <Link to="/login" className="btn-primary">
+                Sign in
+              </Link>
+            </>
+          ) : (
+            <>
+              <h3>Your academic profile starts here.</h3>
+              <p>Create your Richfield Connect profile to join the community.</p>
+              <Link to="/signup" className="btn-primary">
+                Create your profile
+              </Link>
+            </>
+          )}
         </div>
       </div>
     );

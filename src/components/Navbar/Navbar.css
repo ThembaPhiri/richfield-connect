@@ -54,6 +54,14 @@
   border-bottom-color: var(--rc-white);
 }
 
+.navbar-signout {
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  padding-bottom: 4px;
+}
+
 @media (max-width: 767px) {
   .navbar-toggle {
     display: block;
