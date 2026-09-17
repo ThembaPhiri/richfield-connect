@@ -1,10 +1,4 @@
-# Richfield Connect
-
-**Student Full Name:** [Your Full Name]
-**Surname:** [Your Surname]
-**Student Number:** [Your Student Number]
-**Module:** [Module Name]
-**Assignment:** Richfield Connect — Premium React SPA
+Richfield Connect — Premium React SPA
 
 ## Application Description
 
@@ -45,5 +39,3 @@ Then open the local URL Vite prints (typically `http://localhost:5173`).
 - React documentation — https://react.dev
 - React Router v6 documentation — https://reactrouter.com
 - MDN Web Docs — Web APIs (`localStorage`, `crypto.randomUUID`)
-
-[Add or remove entries above to reflect what you actually consulted.]
