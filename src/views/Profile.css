@@ -1,0 +1,79 @@
+.profile-page {
+  max-width: 640px;
+}
+
+.profile-card {
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: var(--rc-blue);
+  color: var(--rc-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0 auto var(--space-2);
+}
+
+.profile-campus {
+  color: var(--rc-mid-grey);
+  margin-bottom: var(--space-3);
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-5);
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--rc-border);
+  border-bottom: 1px solid var(--rc-border);
+  margin-bottom: var(--space-3);
+}
+
+.profile-stats div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-stats strong {
+  font-size: 22px;
+  color: var(--rc-blue);
+}
+
+.profile-stats span {
+  font-size: var(--fs-meta);
+}
+
+.profile-details {
+  text-align: left;
+  margin: 0 0 var(--space-3) 0;
+}
+
+.profile-details div {
+  margin-bottom: var(--space-2);
+}
+
+.profile-details dt {
+  font-size: var(--fs-meta);
+  color: var(--rc-mid-grey);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-details dd {
+  margin: 2px 0 0 0;
+  font-size: 15px;
+}
+
+.profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}

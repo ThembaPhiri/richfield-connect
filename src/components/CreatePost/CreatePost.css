@@ -1,0 +1,26 @@
+.create-post {
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.create-post textarea {
+  width: 100%;
+  border: 1px solid var(--rc-border);
+  border-radius: 8px;
+  padding: var(--space-2);
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+  transition: border-color var(--transition-fast);
+}
+
+.create-post textarea:focus {
+  outline: none;
+  border-color: var(--rc-blue);
+}
+
+.create-post-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,74 @@
+.post {
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+  animation: postEnter var(--transition-normal) ease both;
+}
+
+@keyframes postEnter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--space-1);
+}
+
+.post-username {
+  font-weight: 600;
+  color: var(--rc-blue);
+}
+
+.post-timestamp {
+  font-size: var(--fs-meta);
+  color: var(--rc-mid-grey);
+}
+
+.post-content {
+  margin: 0 0 var(--space-2) 0;
+}
+
+.post-footer {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.post-like {
+  background: transparent;
+  border: 1px solid var(--rc-border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: var(--rc-mid-grey);
+  transition: color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.post-like-active {
+  color: var(--rc-blue);
+  border-color: var(--rc-blue);
+}
+
+.post-like:active {
+  transform: scale(0.96);
+}
+
+.post-delete {
+  background: none;
+  border: none;
+  color: var(--rc-mid-grey);
+  font-size: 13px;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.post-delete:hover {
+  color: var(--rc-error);
+}

@@ -1,0 +1,41 @@
+/* ---------------------------------------------------------------------
+   Richfield Connect — design tokens
+   Colour, spacing and typography values pulled directly from the brand
+   spec so every component references the same source of truth.
+--------------------------------------------------------------------- */
+:root {
+  /* Brand colours */
+  --rc-blue: #003087;
+  --rc-blue-dark: #00215e;
+  --rc-white: #ffffff;
+  --rc-light-grey: #f5f5f5;
+  --rc-mid-grey: #555555;
+  --rc-border: #e2e2e2;
+  --rc-error: #b3261e;
+  --rc-success: #1e8e3e;
+
+  /* Spacing scale */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 96px;
+
+  /* Radius */
+  --radius: 12px;
+
+  /* Typography */
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --fs-hero: clamp(40px, 6vw, 64px);
+  --fs-page-heading: clamp(30px, 4vw, 42px);
+  --fs-section-heading: clamp(22px, 3vw, 28px);
+  --fs-card-heading: 19px;
+  --fs-body: 16px;
+  --fs-meta: 13px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+}

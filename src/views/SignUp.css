@@ -1,0 +1,16 @@
+.signup-page {
+  max-width: 980px;
+}
+
+.signup-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-3);
+  align-items: start;
+}
+
+@media (max-width: 767px) {
+  .signup-grid {
+    grid-template-columns: 1fr;
+  }
+}

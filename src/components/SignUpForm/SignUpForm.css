@@ -1,0 +1,9 @@
+.signup-form {
+  padding: var(--space-4);
+}
+
+.signup-submit {
+  width: 100%;
+  border: none;
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,58 @@
+.profile-preview {
+  padding: var(--space-4);
+  position: sticky;
+  top: 90px;
+  transition: box-shadow var(--transition-normal);
+}
+
+.preview-label {
+  font-size: var(--fs-meta);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--rc-mid-grey);
+  margin-bottom: var(--space-2);
+}
+
+.preview-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--rc-blue);
+  color: var(--rc-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: var(--space-2);
+  transition: background var(--transition-normal);
+}
+
+.preview-name {
+  margin-bottom: 2px;
+}
+
+.preview-campus {
+  font-size: var(--fs-meta);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.preview-bio {
+  font-size: 14px;
+  margin-bottom: var(--space-2);
+}
+
+.preview-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.preview-tag {
+  background: var(--rc-light-grey);
+  color: var(--rc-blue);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
