@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useApp } from '../context/AppContext.jsx';
 import './Home.css';
 
 const FEATURES = [
@@ -21,6 +22,19 @@ const FEATURES = [
 
 // Home view — hero, slogan, feature progression, and the Register CTA.
 export default function Home() {
+  const { state } = useApp();
+  const { user, account } = state;
+
+  let ctaTo = '/signup';
+  let ctaLabel = 'Register Now';
+  if (user) {
+    ctaTo = '/profile';
+    ctaLabel = 'View your profile';
+  } else if (account) {
+    ctaTo = '/login';
+    ctaLabel = 'Sign In';
+  }
+
   return (
     <div>
       <section className="hero">
@@ -31,8 +45,8 @@ export default function Home() {
             A digital academic community where students connect, contribute and grow.
           </p>
           <div className="hero-actions">
-            <Link to="/signup" className="btn-primary">
-              Register Now
+            <Link to={ctaTo} className="btn-primary">
+              {ctaLabel}
             </Link>
             <Link to="/feed" className="btn-secondary">
               Explore the community →
